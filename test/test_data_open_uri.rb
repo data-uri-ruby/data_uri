@@ -15,21 +15,21 @@ describe URI::Data do
     end
 
     it "should open" do
-      @uri.open.read.must_equal @data
+      _(@uri.open.read).must_equal @data
     end
 
     it "should open with a block" do
       @uri.open do |io|
-        io.read.must_equal @data
+        _(io.read).must_equal @data
       end
     end
 
     it "should have content_type on opened IO" do
-      @uri.open.content_type.must_equal 'image/gif'
+      _(@uri.open.content_type).must_equal 'image/gif'
     end
 
     it "should open on Kernel.open" do
-      open(@uri).read.must_equal @uri.data
+      _(open(@uri).read).must_equal @uri.data
     end
 
   end
