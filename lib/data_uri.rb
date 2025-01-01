@@ -1,5 +1,3 @@
-require 'uri'
-require 'base64'
-require 'stringio'
+# frozen_string_literal: true
 
 require 'data_uri/uri'
