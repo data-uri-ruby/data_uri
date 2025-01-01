@@ -23,21 +23,26 @@ a line.
 
 ## Installation
 
- # Replacement of `data_uri`, do not mix with it
- gem 'data_uri_revived'
+```ruby
+# Replacement of `data_uri`, do not mix with it
+gem 'data_uri_revived'
+```
 
 ## Usage
 
- require 'data_uri_revived'
- # Or the old one in case you have old require statements
- require 'data_uri'
+```ruby
+require 'data_uri_revived'
+# Or the old one in case you have old require statements
+require 'data_uri'
 
- uri = URI::Data.new('data:image/gif;base64,...')
- uri.content_type # image/gif
- uri.data # Base64 decoded data
+uri = URI::Data.new('data:image/gif;base64,...')
+uri.content_type # image/gif
+uri.data # Base64 decoded data
 
- # Same as `URI::Data.new`
- uri = URI.parse('data:image/gif;base64,...')
+# Same as `URI::Data.new`
+uri = URI.parse('data:image/gif;base64,...')
+
+```
 
 Data URIs CANNOT play nicely with open-uri (was mentioned to be working in original `data_uri` gem
 
