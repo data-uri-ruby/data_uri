@@ -1,8 +1,18 @@
-= Data URI Revived {<img src="https://img.shields.io/github/actions/workflow/status/data-uri-ruby/data_uri/tests.yaml?branch=master&style=flat-square" alt="Build Status" />}[https://github.com/data-uri-ruby/data_uri/actions/workflows/tests.yaml]
+# Data URI Revived
 
 Fork of unmaintained original `data_uri` (No commit for 11 years)
 
-== Introduction
+## Status
+
+[![GitHub Build Status](https://img.shields.io/github/actions/workflow/status/data-uri-ruby/data_uri/tests.yaml?branch=master&style=flat-square)](https://github.com/data-uri-ruby/data_uri/actions/workflows/tests.yaml)
+
+[![Gem Version](http://img.shields.io/gem/v/data_uri_revived.svg?style=flat-square)](http://badge.fury.io/rb/data_uri_revived)
+[![License](https://img.shields.io/github/license/data-uri-ruby/data_uri.svg?style=flat-square)](http://badge.fury.io/rb/data_uri_revived)
+
+[![Coverage Status](http://img.shields.io/coveralls/data-uri-ruby/data_uri.svg?style=flat-square)](https://coveralls.io/r/data-uri-ruby/data_uri)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/data-uri-ruby/data_uri.svg?style=flat-square)](https://codeclimate.com/github/data-uri-ruby/data_uri)
+
+## Introduction
 
 Data URIs allow resources to be embedded inside a URI. The URI::Data class
 provides support for parsing these URIs using the normal URI.parse method.
@@ -11,12 +21,12 @@ I wrote it to support embedding binary data inside JSON messages in a
 relatively reasonable way. If you find some other use for it, please drop me
 a line.
 
-== Installation
+## Installation
 
  # Replacement of `data_uri`, do not mix with it
  gem 'data_uri_revived'
 
-== Usage
+## Usage
 
  require 'data_uri_revived'
  # Or the old one in case you have old require statements
@@ -31,7 +41,7 @@ a line.
 
 Data URIs CANNOT play nicely with open-uri (was mentioned to be working in original `data_uri` gem
 
-== Features & Limitations
+## Features & Limitations
 
 URI.parse knows about URI::Data, but unfortunately, its regexp for splitting
 URIs into components maxes out at 92 characters for an opaque URI, which is
@@ -65,7 +75,7 @@ data URIs can necessarily be distinguished from filesystem paths on all
 platforms. Again, if this causes undue pain and suffering, we can commit
 minor violence to open-uri to convince it to see reason.
 
-== License:
+## License:
 
 (The MIT License)
 
