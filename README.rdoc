@@ -1,4 +1,6 @@
-= Data URI {<img src="https://travis-ci.org/dball/data_uri.png" alt="Build Status" />}[https://travis-ci.org/dball/data_uri]
+= Data URI Revived {<img src="https://img.shields.io/github/actions/workflow/status/data-uri-ruby/data_uri/tests.yaml?branch=master&style=flat-square" alt="Build Status" />}[https://github.com/data-uri-ruby/data_uri/actions/workflows/tests.yaml]
+
+Fork of unmaintained original `data_uri` (No commit for 11 years)
 
 == Introduction
 
@@ -9,26 +11,25 @@ I wrote it to support embedding binary data inside JSON messages in a
 relatively reasonable way. If you find some other use for it, please drop me
 a line.
 
+== Installation
+
+ # Replacement of `data_uri`, do not mix with it
+ gem 'data_uri_revived'
+
 == Usage
 
+ require 'data_uri_revived'
+ # Or the old one in case you have old require statements
  require 'data_uri'
 
  uri = URI::Data.new('data:image/gif;base64,...')
  uri.content_type # image/gif
  uri.data # Base64 decoded data
 
-Data URIs can play nicely with open-uri:
+ # Same as `URI::Data.new`
+ uri = URI.parse('data:image/gif;base64,...')
 
- require 'open-uri'
- require 'data_uri/open_uri'
-
- open(uri) do |io|
-   io.content_type # image/gif
-   io.read # decoded data
- end
-
-There is no support for creating data URI strings, but it would be trivial to
-add if anyone's interested.
+Data URIs CANNOT play nicely with open-uri (was mentioned to be working in original `data_uri` gem
 
 == Features & Limitations
 
@@ -69,6 +70,7 @@ minor violence to open-uri to convince it to see reason.
 (The MIT License)
 
 Copyright (c) 2010 Donald Ball <donald.ball@gmail.com>
+Copyright (c) 2025 PikachuEXE <git@pikachuexe.net>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

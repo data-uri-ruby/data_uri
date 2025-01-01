@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
-  s.name        = "data_uri"
+  s.name        = "data_uri_revived"
   s.version     = "0.0.3"
-  s.author      = "Donald Ball"
-  s.email       = "donald.ball@gmail.com"
-  s.homepage    = "http://github.com/dball/data_uri"
+  s.authors     = ["Donald Ball", "PikachuEXE"]
+  s.email       = %w[donald.ball@gmail.com git@pikachuexe.net]
+  s.homepage    = "https://github.com/data-uri-ruby/data_uri"
   s.description = "URI class for parsing data URIs"
   s.summary     = "A URI class for parsing data URIs as per RFC2397"
 
