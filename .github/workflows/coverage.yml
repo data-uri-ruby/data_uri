@@ -28,7 +28,7 @@ jobs:
           - "truffleruby+graalvm"
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
-      COVERALLS: true
+      COVERAGE: true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

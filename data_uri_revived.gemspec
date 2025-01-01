@@ -4,6 +4,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Donald Ball", "PikachuEXE"]
   s.email       = %w[donald.ball@gmail.com git@pikachuexe.net]
   s.homepage    = "https://github.com/data-uri-ruby/data_uri"
+  s.licenses     = ['MIT']
   s.description = "URI class for parsing data URIs"
   s.summary     = "A URI class for parsing data URIs as per RFC2397"
 
