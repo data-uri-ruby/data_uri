@@ -16,7 +16,7 @@ module URI
     def initialize(*args)
       if args.length == 1
         uri = args.first.to_s
-        unless uri.match(/^data:/)
+        unless uri.match?(/^data:/)
           raise URI::InvalidURIError.new('Invalid Data URI: ' + args.first.inspect)
         end
         @scheme = 'data'
@@ -35,10 +35,10 @@ module URI
         @mime_params[md[1]] = md[2]
         @data = @data[md[0].length .. -1]
       end
-      if (base64 = /^;base64/.match(@data))
+      if (base64 = /^;base64/.match?(@data))
         @data = @data[7 .. -1]
       end
-      unless /^,/.match(@data)
+      unless /^,/.match?(@data)
         raise URI::InvalidURIError.new('Invalid data URI')
       end
       @data = @data[1 .. -1]
