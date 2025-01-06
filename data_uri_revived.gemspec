@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "data_uri_revived"
-  s.version     = "0.0.3"
+  s.version     = "0.1.1"
   s.authors     = ["Donald Ball", "PikachuEXE"]
   s.email       = %w[donald.ball@gmail.com git@pikachuexe.net]
   s.homepage    = "https://github.com/data-uri-ruby/data_uri"
@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
 
   s.require_path = 'lib'
   s.files = %w(README.md Rakefile) + Dir.glob("lib/**/*")
+
+  s.metadata["changelog_uri"] = "#{s.homepage}/blob/master/CHANGELOG.md"
 
   s.add_dependency             "base64"
 
