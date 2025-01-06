@@ -32,5 +32,5 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Raise `URI::InvalidURIError` instead of `StandardError` for invalid URIs
 
 
-[Unreleased]: https://github.com/data-uri-ruby/data_uri/compare/v7.0.1...HEAD
-[0.1.1]: https://github.com/data-uri-ruby/data_uri/compare/v7.0.0...v7.0.1
+[Unreleased]: https://github.com/data-uri-ruby/data_uri/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/data-uri-ruby/data_uri/compare/v0.1.0...v0.1.1

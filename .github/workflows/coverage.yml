@@ -5,12 +5,12 @@ on:
     branches:
       - master
     paths-ignore:
-      - 'README.md'
+      - '**.md'
   push:
     branches:
       - master
     paths-ignore:
-      - 'README.md'
+      - '**.md'
 
 jobs:
   coverage:
