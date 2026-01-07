@@ -22,7 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-- Support Rails 8.x
+- Support Ruby 3.1+
 
 
 ## 0.1.0 - 2014-02-18

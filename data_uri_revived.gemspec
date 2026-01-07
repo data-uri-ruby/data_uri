@@ -16,9 +16,10 @@ Gem::Specification.new do |s|
   s.files = %w(README.md Rakefile) + Dir.glob("lib/**/*")
 
   s.metadata = {
+    "homepage_uri"      => s.homepage,
+    "source_code_uri"   => s.homepage,
     "bug_tracker_uri"   => "#{s.homepage}/issues",
     "changelog_uri"     => "#{s.homepage}/blob/master/CHANGELOG.md",
-    "source_code_uri"   => s.homepage,
   }
 
   s.add_dependency             "base64"
