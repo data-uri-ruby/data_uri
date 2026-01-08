@@ -10,7 +10,6 @@ Fork of unmaintained original `data_uri` (No commit for 11 years)
 [![License](https://img.shields.io/github/license/data-uri-ruby/data_uri.svg?style=flat-square)](http://badge.fury.io/rb/data_uri_revived)
 
 [![Coverage Status](http://img.shields.io/coveralls/data-uri-ruby/data_uri.svg?style=flat-square)](https://coveralls.io/r/data-uri-ruby/data_uri)
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/data-uri-ruby/data_uri.svg?style=flat-square)](https://codeclimate.com/github/data-uri-ruby/data_uri)
 
 ## Introduction
 
